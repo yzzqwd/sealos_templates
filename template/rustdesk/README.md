@@ -1,23 +1,42 @@
-为远程连接工具 rustdesk 在 sealos 中建立服务端。    
+# RustDesk: Open-Source Remote Desktop Solution
 
-1. 按照模板一键部署    
+RustDesk is a high-performance, open-source remote desktop application designed to provide secure and efficient remote access to computers. Built with user privacy and ease of use in mind, RustDesk offers a self-hosted alternative to popular remote desktop tools, ensuring that users retain full control over their data. With its lightweight architecture and cross-platform support, RustDesk is an ideal choice for individuals and organizations seeking a reliable remote desktop solution.
 
-> TIPS：建议 ENCRYPTED_ONLY 选择 1，这样只允许建立加密连接，不易被别人白嫖    
+## Key Features
 
-2. 部署成功，应用处于 running 状态后，在日志中找到暴露的域名 (这里示例是 ENCRYPTED_ONLY=0 的情况)：   
+- **Open-Source and Self-Hosted**: RustDesk is fully open-source, allowing users to inspect, modify, and host the software on their own servers, ensuring complete data ownership and privacy.
 
-![](https://github.com/labring-actions/templates/assets/45360163/6c4042f7-3537-4aee-8c5f-d5a136d18c03)
+- **Cross-Platform Support**: Available on multiple platforms including Windows, macOS, Linux, iOS, and Android, enabling seamless remote connections across different devices and operating systems.
 
-3. 在我的应用--Other 中找到映射的端口：    
+- **High Performance**: Optimized for low-latency and high-speed connections, RustDesk delivers a smooth and responsive remote desktop experience even under demanding conditions.
 
-![](https://github.com/labring-actions/templates/assets/45360163/e8edc007-f41a-4415-bb0e-244bcb4e91f9)
+- **End-to-End Encryption**: All communication between the client and host is encrypted, ensuring secure data transmission and protecting against unauthorized access.
 
-4. 在你的客户端填入信息如下：
+- **User-Friendly Interface**: Designed with simplicity in mind, RustDesk provides an intuitive interface that makes it easy for both beginners and advanced users to set up and operate.
 
-> TIPS：当 ENCRYPTED_ONLY 选择1时，必须填入下图设置中的 Key。其内容从上面图 1 中的日志获取。
+- **Customizable Settings**: Offers a range of configuration options, allowing users to tailor the application to their specific needs, such as adjusting connection quality or managing access permissions.
 
-![](https://github.com/labring-actions/templates/assets/45360163/437b342e-2439-4312-a697-6e0e8117bea8)
+- **Portable and Lightweight**: RustDesk has a small footprint and does not require complex installation procedures, making it highly portable and easy to deploy.
 
-5. 点击客户端左上角**主页**，看到底部状态栏绿色**就绪**，即部署+连接成功。Enjoy！
+- **Active Community and Development**: Backed by a vibrant open-source community, RustDesk is continuously improved with regular updates, bug fixes, and new features contributed by developers worldwide.
 
-> TIPS：管理好自己的中继/ID 服务器信息，泄密会造成难以评估的后果！
+RustDesk empowers users with a dependable, privacy-focused remote desktop tool that can be tailored to meet diverse requirements while maintaining a commitment to openness and security.
+
+### Notice
+
+1.  Protect the login address: Set access restrictions to prevent unauthorized direct access.
+    
+2.  Use a complex password: Create a password that includes uppercase letters, lowercase letters, numbers, and special characters to increase cracking difficulty.
+    
+3.  Avoid common usernames: Refrain from using common usernames like "admin" or "root" to reduce the risk of brute-force attacks.
+    
+4. Regularly change passwords: It is recommended to update your password periodically to mitigate security risks associated with long-term usage of the same password.
+    
+5.  Enable multi-factor authentication: Adopt two-factor authentication to add an extra layer of security beyond just the password.
+    
+6.  Limit login attempts: Set a maximum number of failed login attempts, and temporarily lock the account once it is exceeded to prevent brute-force attacks.
+    
+7.  Configure unusual login notifications: Set up alerts for abnormal login activity to be informed and respond promptly to potential security issues.
+    
+8.  Conduct regular security audits: Periodically review account security logs and system configurations to quickly identify and fix potential vulnerabilities.
+        

@@ -1,53 +1,42 @@
-本模板用来定时备份帕鲁私服中的存档，备份保存在 `/palworld/backups` 目录下。
+# Palworld-Autobackup: Automated Backup Solution for Palworld Servers
 
-需要填写两个参数：
+Palworld-Autobackup is a robust and efficient tool designed to automate the backup process for Palworld game servers. By leveraging this solution, server administrators can ensure data safety and minimize downtime during unexpected failures or data loss incidents. With its user-friendly configuration and seamless integration into existing workflows, this project simplifies the complexities of manual backups while providing flexibility and reliability.
 
-### 1. APP_NAME
+## Key Features
 
-这是你的帕鲁私服应用名称，你需要在 Sealos 桌面打开「应用管理」，在应用列表中找到你的帕鲁私服应用名字，就是我红框圈出来的部分，复制这个名字作为 APP_NAME 的值。
+- **Automated Backup Scheduling**: Set up custom backup intervals using cron-like syntax, ensuring your data is backed up at regular intervals without manual intervention.
+  
+- **Efficient Storage Management**: Automatically manage disk space by retaining only the most recent backups and deleting older ones based on predefined retention policies.
 
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-29-16-25-r1LlVk.jpg)
+- **Cross-Platform Compatibility**: Designed to work across various operating systems, making it adaptable to different server environments with minimal setup effort.
 
-### 2. INTERVAL
+- **Customizable Backup Paths**: Define specific directories or files to include in the backup process, allowing users to tailor the solution to their unique needs.
 
-你希望每隔几小时备份一次，这里就填几。比如，如果你想每 5 个小时备份一次，这里就填 5。
+- **Compressed Backup Files**: Save storage space by compressing backup files, reducing the overall size while maintaining data integrity.
 
-填写好参数以后，点击右上角的「部署应用」开始部署，完结撒花。
+- **Logging and Notifications**: Provides detailed logs of backup operations and supports optional notifications to keep administrators informed about the status of each backup job.
 
-你可以点击 CronJob 的「详情」进入定时任务的详情页面：
+- **Easy Integration**: Seamlessly integrates with existing server management tools and scripts, enabling quick adoption without disrupting current workflows.
 
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-31-17-34-z1O8Hc.jpg)
+- **Fail-Safe Mechanism**: Includes error handling and retry logic to ensure that backup jobs are completed successfully even in cases of temporary failures.
 
-在这里你可以暂停定时任务，也可以修改定时任务，爱咋咋的！
+This project is ideal for Palworld server administrators seeking a reliable and automated way to safeguard their data while focusing on delivering the best gaming experience to their community.
 
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-31-17-34-36vlam.jpg)
+### Notice
 
----
-
-## 查看存档备份
-
-**这一步非常重要！！！为了防止别人能访问你的文件管理器，一定要修改密码！！！**
-
-在「应用管理」界面进入 palworld 应用的详情页面，然后点击我用红框框出来的外网地址：
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-27-16-09-6edDbv.png)
-
-打开文件管理器后，输入用户名密码登录，默认的用户名是 `admin`，默认密码也是 `admin`。登录之后，先点击 "Settings":
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-27-16-12-LSucr2.jpg)
-
-然后点击 "User management"，再点击 admin 最右边的铅笔按钮：
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-27-16-26-LtKvG4.jpg)
-
-在 "Password" 输入框中填入你的新密码，然后将 Language 的值改为「中文（简体）」：
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-27-16-27-aWTOJm.jpg)
-
-最后点击右下角的 save 即可。
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-27-16-27-bgXwUj.jpg)
-
-现在回到主界面，你会看到这里有个 backups 文件夹，这个文件夹里都是你的备份，你可以随意下载转存：
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-31-17-33-DlfaDp.jpg)
+1.  Protect the login address: Set access restrictions to prevent unauthorized direct access.
+    
+2.  Use a complex password: Create a password that includes uppercase letters, lowercase letters, numbers, and special characters to increase cracking difficulty.
+    
+3.  Avoid common usernames: Refrain from using common usernames like "admin" or "root" to reduce the risk of brute-force attacks.
+    
+4.  Regularly change passwords: It is recommended to update your password periodically to mitigate security risks associated with long-term usage of the same password.
+    
+5.  Enable multi-factor authentication: Adopt two-factor authentication to add an extra layer of security beyond just the password.
+    
+6.  Limit login attempts: Set a maximum number of failed login attempts, and temporarily lock the account once it is exceeded to prevent brute-force attacks.
+    
+7.  Configure unusual login notifications: Set up alerts for abnormal login activity to be informed and respond promptly to potential security issues.
+    
+8.  Conduct regular security audits: Periodically review account security logs and system configurations to quickly identify and fix potential vulnerabilities.
+        

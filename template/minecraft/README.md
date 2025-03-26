@@ -1,23 +1,40 @@
-三分钟即可拥有一个强大稳定的 Minecraft 联机服务器。
+# Minecraft Server Template
 
-直接打开这个链接：
+The **Minecraft Server Template** is a streamlined and highly customizable solution designed to help developers and server administrators efficiently set up, configure, and manage Minecraft servers. Whether you're running a small private server or scaling up for larger communities, this project simplifies the deployment process while offering advanced features to enhance server performance and maintainability.
 
-+ [https://bja.sealos.run/?openapp=system-template%3FtemplateName%3Dminecraft](https://bja.sealos.run/?openapp=system-template%3FtemplateName%3Dminecraft)
+## Key Features
 
-> 没错，你看到的就是 Sealos 的应用模板，这些模板可用于快速创建和部署网站和各种应用程序。你可以在模板市场中找到各种类型的模板，这些模板不仅包含了前端项目，还包含了后端和其他各类应用的部署，具体可参考 [Sealos 模板市场相关文档](https://sealos.run/docs/guides/templates/)。
+- **Easy Setup Process**: Simplifies the initial configuration of Minecraft servers with intuitive templates and pre-configured settings.
+  
+- **Customizable Configuration**: Provides flexible options to tailor server properties, game rules, and plugins according to your specific needs.
 
-接下来你只需要选择服务器的核心（TYPE），输入服务器的 Minecraft 版本（VERSION），然后点击右上角的「去 Sealos 部署」。
+- **Performance Optimization**: Includes built-in tools and configurations aimed at improving server performance and reducing latency for players.
 
-> 如果您是第一次使用 Sealos，则需要注册登录 Sealos 公有云账号，登录之后会立即跳转到模板的部署页面。
+- **Scalable Architecture**: Designed to accommodate both small-scale and large-scale deployments, ensuring reliability as player numbers grow.
 
-跳转进来之后，点击右上角的「部署应用」开始部署，部署完成后，直接点击应用的「详情」进入该应用的详情页面。
+- **Comprehensive Documentation**: Offers detailed instructions and best practices to guide users through every step of server management.
 
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting-test@main/uPic/2024-03-02-21-03-IPhnsg.png)
+- **Plugin Integration Support**: Facilitates seamless integration of popular Minecraft plugins, enabling extended functionality and enhanced gameplay experiences.
 
-等待应用变成 Running 状态，然后点击日志按钮查看日志，只要出现了下面的日志，便是启动成功了：
+- **Cross-Platform Compatibility**: Ensures smooth operation across various operating systems and environments, providing versatility for different use cases.
 
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting-test@main/uPic/2024-03-02-21-05-ovzT6f.png)
+This project is ideal for developers, server hosts, and gaming enthusiasts who are looking for a robust and adaptable solution to deploy and manage Minecraft servers with ease.
 
-启动成功后，你可以关闭或者最小化「应用管理」App，然后回到「模板市场」的 minecraft 应用界面，拉到最下面的「Others」，你会看到有一个类型叫「Service」的资源，它的描述部分有一个字段是这样写的：`25565:31483/TCP`。25565 后面的端口就是公网端口，比如这里的公网端口就是 31483。
+### Notice
 
-那么你这个 Minecraft 服务器的地址就是 `bja.sealos.run:31483`
+1.  Protect the login address: Set access restrictions to prevent unauthorized direct access.
+    
+2.  Use a complex password: Create a password that includes uppercase letters, lowercase letters, numbers, and special characters to increase cracking difficulty.
+    
+3.  Avoid common usernames: Refrain from using common usernames like "admin" or "root" to reduce the risk of brute-force attacks.
+    
+4.  Regularly change passwords: It is recommended to update your password periodically to mitigate security risks associated with long-term usage of the same password.
+    
+5.  Enable multi-factor authentication: Adopt two-factor authentication to add an extra layer of security beyond just the password.
+    
+6.  Limit login attempts: Set a maximum number of failed login attempts, and temporarily lock the account once it is exceeded to prevent brute-force attacks.
+    
+7.  Configure unusual login notifications: Set up alerts for abnormal login activity to be informed and respond promptly to potential security issues.
+    
+8.  Conduct regular security audits: Periodically review account security logs and system configurations to quickly identify and fix potential vulnerabilities.
+        

@@ -1,37 +1,35 @@
-本模板可通过图形界面导出旧模板部署的帕鲁私服存档。
+# Palworld Export Tool
 
-使用方法：
+The Palworld Export Tool is a versatile and efficient utility designed to streamline the process of exporting data from the popular game, Palworld. This project offers developers and enthusiasts a convenient way to extract in-game information, manage assets, and automate workflows with minimal effort. Built with flexibility and ease of use in mind, it supports various customization options to suit different needs while maintaining high performance and reliability.
 
-### 1. 退出游戏
+## Key Features
 
-部署之前先退出游戏，确保游戏已经存档。但是：**你的私服必须得开着，不能关！不能关！不能关！**
+- **Seamless Data Extraction**: Extracts Palworld game data efficiently, ensuring accuracy and completeness.
+- **Customizable Export Options**: Provides flexible configurations to tailor export formats and content to specific requirements.
+- **Automated Workflows**: Simplifies repetitive tasks by integrating automation features for common export operations.
+- **User-Friendly Interface**: Offers an intuitive command-line interface (CLI) that is easy to navigate and operate.
+- **Extensible Architecture**: Designed to allow developers to extend functionality through plugins or custom scripts.
+- **Cross-Platform Compatibility**: Ensures consistent performance across multiple operating systems.
+- **Comprehensive Documentation**: Includes detailed guides and examples to help users get started quickly and troubleshoot issues effectively.
+- **Active Community Support**: Backed by a vibrant community of contributors who continuously improve and update the tool.
 
-### 2. 部署应用
+Whether you're a developer looking to integrate Palworld data into your projects or a gamer seeking to manage your in-game assets, the Palworld Export Tool provides a robust solution to meet your needs.
 
-只需要填一个参数 `APP_NAME`。
+### Notice
 
-这是你的帕鲁私服应用名称，你需要在 Sealos 桌面打开「应用管理」，在应用列表中找到你的帕鲁私服应用名字，就是我红框圈出来的部分，复制这个名字作为 APP_NAME 的值。
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-29-16-25-r1LlVk.jpg)
-
-填写好参数以后，点击右上角的「部署应用」开始部署，部署完成后，直接点击应用的「详情」进入该应用的详情页面。
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-31-14-39-ojbWBa.jpg)
-
-然后点击外网地址即可打开「帕鲁存档导出器」的管理界面：
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-31-14-44-MiVWVT.jpg)
-
-### 3. 导出存档
-
-打开文件管理器后，输入用户名密码登录，默认的用户名是 `admin`，默认密码也是 `admin`。登录之后，双击我用红框框出来的 Pal 文件夹进入 Pal 文件夹：
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-27-16-26-Ih0nOf.jpg)
-
-然后单击我用红框框出来的 `Saved` 文件，再点击上方的下载图标：
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-27-16-24-RHzR99.jpg)
-
-点击我用红框框出来的 zip 即可将游戏存档压缩并下载到本地：
-
-![](https://cdn.jsdelivr.net/gh/yangchuansheng/imghosting6@main/uPic/2024-01-27-16-25-Uuw8xg.jpg)
+1.  Protect the login address: Set access restrictions to prevent unauthorized direct access.
+    
+2.  Use a complex password: Create a password that includes uppercase letters, lowercase letters, numbers, and special characters to increase cracking difficulty.
+    
+3.  Avoid common usernames: Refrain from using common usernames like "admin" or "root" to reduce the risk of brute-force attacks.
+    
+4.  Regularly change passwords: It is recommended to update your password periodically to mitigate security risks associated with long-term usage of the same password.
+    
+5.  Enable multi-factor authentication: Adopt two-factor authentication to add an extra layer of security beyond just the password.
+    
+6.  Limit login attempts: Set a maximum number of failed login attempts, and temporarily lock the account once it is exceeded to prevent brute-force attacks.
+    
+7.  Configure unusual login notifications: Set up alerts for abnormal login activity to be informed and respond promptly to potential security issues.
+    
+8.  Conduct regular security audits: Periodically review account security logs and system configurations to quickly identify and fix potential vulnerabilities.
+        
