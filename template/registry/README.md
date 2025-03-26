@@ -1,54 +1,42 @@
-# OCI Distribution Specification Registry and GUI-Registry
+# Introduction to the Registry Project
 
-## Overview
+The Registry project is a lightweight, efficient, and versatile tool designed to manage and organize resources in a structured and scalable manner. It serves as a centralized repository for storing and retrieving metadata, configurations, or any other data that requires systematic handling. Built with flexibility in mind, this project is ideal for developers who need a reliable solution for resource registration and lookup operations.
 
-The registry is an implementation of the [OCI Distribution Specification](https://github.com/opencontainers/distribution-spec), providing a standards-based solution for storing and distributing container images.
+## Key Features
 
-The `gui-registry` is a web UI for managing the registry, offering a user-friendly interface for common tasks such as pushing, pulling, and managing images.
+- **Centralized Resource Management**: Provides a unified platform to register and manage various types of resources, ensuring easy access and organization.
+  
+- **Highly Customizable**: Allows users to define custom schemas and structures for the stored data, making it adaptable to diverse use cases.
 
-### Default Credentials
+- **Scalable Architecture**: Designed to handle growing amounts of data without compromising performance, making it suitable for both small-scale and enterprise-level applications.
 
-- **Username:** `root`
-- **Password:** `root`
+- **Efficient Lookup Mechanisms**: Implements optimized search and retrieval operations to ensure quick access to registered resources.
 
-## Example Configuration
+- **Extensible Design**: Offers hooks and APIs for integrating with external systems or extending its functionality to meet specific requirements.
 
-### External Network Addresses
+- **Developer-Friendly**: Includes clear documentation, intuitive interfaces, and straightforward setup processes to reduce the learning curve and accelerate development.
 
-- **Registry:** [https://registry.cloud.sealos.io](https://registry.cloud.sealos.io)
-- **GUI-Registry:** [https://gui-registry.cloud.sealos.io](https://gui-registry.cloud.sealos.io)
+- **Robust Error Handling**: Incorporates comprehensive error detection and recovery mechanisms to maintain data integrity and system reliability.
 
-### Pushing an Image to the Registry
+- **Cross-Platform Compatibility**: Ensures seamless operation across different environments and platforms, providing consistent behavior regardless of the deployment setup.
 
-1. **Login to the Registry:**
-    ```sh
-    docker login registry.cloud.sealos.io
-    ```
-    - **Username:** `root`
-    - **Password:** `root`
+This project is an excellent choice for developers seeking a dependable and adaptable registry solution to streamline their workflows and enhance resource management capabilities.
 
-2. **Tag the Image:**
-    ```sh
-    docker tag nginx:latest registry.cloud.sealos.io/nginx:latest
-    ```
+### Notice
 
-3. **Push the Image:**
-    ```sh
-    docker push registry.cloud.sealos.io/nginx:latest
-    ```
-
-4. **Change the root password:**
-    Edit the `registry_htpasswd` file in applaunchpad's registry app to change the `root` password using [Bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
-
-    Note: you can ues https://httpd.apache.org/docs/2.4/programs/htpasswd.html to generate the htpasswd file.
-
-5. **Config the registry**
-    See: https://distribution.github.io/distribution/about/configuration for more configuration
-
-### Web Management
-
-- **Access Address:** [https://gui-registry.cloud.sealos.io](https://gui-registry.cloud.sealos.io)
-- **Username:** `root`
-- **Password:** `root`
-
-This setup allows you to manage your container images easily through both command-line operations and a graphical web interface. Make sure to replace the default credentials with more secure options in a production environment.
+1.  Protect the login address: Set access restrictions to prevent unauthorized direct access.
+    
+2.  Use a complex password: Create a password that includes uppercase letters, lowercase letters, numbers, and special characters to increase cracking difficulty.
+    
+3.  Avoid common usernames: Refrain from using common usernames like "admin" or "root" to reduce the risk of brute-force attacks.
+    
+4. Regularly change passwords: It is recommended to update your password periodically to mitigate security risks associated with long-term usage of the same password.
+    
+5.  Enable multi-factor authentication: Adopt two-factor authentication to add an extra layer of security beyond just the password.
+    
+6.  Limit login attempts: Set a maximum number of failed login attempts, and temporarily lock the account once it is exceeded to prevent brute-force attacks.
+    
+7.  Configure unusual login notifications: Set up alerts for abnormal login activity to be informed and respond promptly to potential security issues.
+    
+8.  Conduct regular security audits: Periodically review account security logs and system configurations to quickly identify and fix potential vulnerabilities.
+        

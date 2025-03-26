@@ -1,39 +1,46 @@
-## 可道云
-> 可道云-私有云存储&协同办公平台_企业网盘_企业云盘_网盘_云盘
+# Introduction to KodCloud
 
-### 云端存储&协同办公新体验
-* 如Windows体验的私有云盘/企业网盘
-* 完全支持私有化部署，存储安全可控
-* 数百种文件格式在线预览、编辑和播放
-* 轻松分享，高效协作，细粒度权限管控
-* 全平台客户端覆盖，随时随地访问，轻松同步挂载
+KodCloud is an open-source, self-hosted cloud storage solution designed to provide users with a private, secure, and highly customizable alternative to mainstream cloud services. Built for individuals and organizations seeking control over their data, KodCloud offers a user-friendly interface combined with robust functionality, making it ideal for file management, collaboration, and sharing. Whether you're looking to set up a personal cloud or deploy an enterprise-grade storage system, KodCloud simplifies the process while maintaining flexibility and scalability.
 
-#### 颜值担当，WebOS级别操作体验
-![img.png](https://kodcloud.com/static/images/kodbox/opt-1.png)
+## Key Features
 
-#### 随时随地，文档随心查看
-![文档预览](https://kodcloud.com/static/images/kodbox/opt-2.png)
+- **Private and Secure Storage**: Host your files on your own servers, ensuring complete control over your data and eliminating reliance on third-party providers.
+  
+- **User-Friendly Interface**: A clean, intuitive web-based UI that makes file management and navigation seamless for users of all technical backgrounds.
 
-#### 影音娱乐，趣味盎然
-![在线影音](https://kodcloud.com/static/images/kodbox/opt-3.png)
+- **Multi-Platform Support**: Access your cloud storage from various devices, including desktops, tablets, and smartphones, ensuring productivity on the go.
 
-#### 图片相册，轻松预览和管理
-![个人相册](https://kodcloud.com/static/images/kodbox/opt-4.png)
+- **Collaboration Tools**: Share files and folders with others, assign permissions, and collaborate in real-time with team members or external partners.
 
-#### 强大的在线解压、压缩和预览
-![在线解压缩](https://kodcloud.com/static/images/kodbox/opt-5.png)
+- **Customizable Plugins**: Extend functionality by integrating plugins tailored to your specific needs, such as document viewers, media players, or advanced analytics tools.
 
-#### 组织架构集成，多元化的权限策略
-![组织架构管理](https://kodcloud.com/static/images/kodbox/opt-6.png)
+- **Scalable Architecture**: Designed to handle small-scale personal deployments as well as large-scale enterprise environments, ensuring performance and reliability.
 
-#### 强大、简单易用的上传下载
-![上传下载](https://kodcloud.com/static/images/kodbox/opt-7.png)
+- **Data Backup and Recovery**: Built-in mechanisms to safeguard your data through regular backups and easy recovery options in case of accidental deletions or system failures.
 
-#### 主题随心定义，更多的生产力
-![主题自定义](https://kodcloud.com/static/images/kodbox/opt-8.png)
+- **Open Source Flexibility**: Fully open-source codebase allows developers to modify, enhance, or integrate KodCloud into existing systems, fostering innovation and adaptability.
 
-#### 多语言支持
-![多语言支持](https://kodcloud.com/static/images/kodbox/opt-9.png)
+- **Lightweight and Efficient**: Optimized for minimal resource consumption, making it suitable for deployment on a wide range of hardware configurations.
 
-### 安装说明
-* 安装完成后等待20秒再打开首页，此时后台在进行数据库初始化
+- **Active Community Support**: Backed by a vibrant community of contributors and users who provide ongoing updates, bug fixes, and feature enhancements.
+
+KodCloud empowers users to take ownership of their digital assets while delivering a powerful yet accessible platform for cloud storage and collaboration.
+
+### Notice
+
+1.  Protect the login address: Set access restrictions to prevent unauthorized direct access.
+    
+2.  Use a complex password: Create a password that includes uppercase letters, lowercase letters, numbers, and special characters to increase cracking difficulty.
+    
+3.  Avoid common usernames: Refrain from using common usernames like "admin" or "root" to reduce the risk of brute-force attacks.
+    
+4.  Regularly change passwords: It is recommended to update your password periodically to mitigate security risks associated with long-term usage of the same password.
+    
+5.  Enable multi-factor authentication: Adopt two-factor authentication to add an extra layer of security beyond just the password.
+    
+6.  Limit login attempts: Set a maximum number of failed login attempts, and temporarily lock the account once it is exceeded to prevent brute-force attacks.
+    
+7.  Configure unusual login notifications: Set up alerts for abnormal login activity to be informed and respond promptly to potential security issues.
+    
+8.  Conduct regular security audits: Periodically review account security logs and system configurations to quickly identify and fix potential vulnerabilities.
+        
